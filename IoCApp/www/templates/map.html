@@ -1,0 +1,23 @@
+<ion-view view-title="map">  <!-- browse -->
+    <ion-content>
+        <!-- <h1>Browses</h1> -->
+        <ion-refresher pulling-text="Pull to refresh" on-refresh="doRefresh()"></ion-refresher>  <!-- this will refresh the page and load the data -->
+     
+<!--
+        <div class="pad-box"> 
+            <div class="floating-box">
+                <h3> Lat is {{LAT}} </h3>             
+            </div>         
+            <div class="floating-box">
+                <h3> Long is {{LONG}} </h3>        
+            </div> 
+            <div class="floating-box">
+                <h3> Satelite no. is {{SAT}} </h3>         
+            </div> 
+        </div>
+    -->
+    <div id ="map" data-tap-disable="true"></div>
+     
+    </ion-content>
+  </ion-view>
+  

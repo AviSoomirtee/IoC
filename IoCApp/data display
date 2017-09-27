@@ -1,0 +1,40 @@
+<ion-content>
+      <center> 
+    
+        <ion-refresher pulling-text="Pull to refresh" on-refresh="doRefresh()"></ion-refresher>  <!-- this will refresh the page and load the data -->
+    <h3>Telemetry Data will be display here: </h3>
+    <div class="pad-box"> 
+        
+    <div class="floating-box">
+        <center><h2 style="color:#d62728">Speed</h2></center>  <!-- header for chart -->
+    <pie-chart   data="data" options="options"  ></pie-chart>     <!-- my chart -->
+    </div>
+    <div class="floating-box">
+      <center><h2 style="color:#DDE331">RPM</h2></center>  <!-- header for chart -->
+  <pie-chart   data="data2" options="options2"  ></pie-chart>     <!-- my chart -->
+  </div>
+
+  <div class="floating-box">
+    <center><h2 style="color:#E3B430">Acc</h2></center>  <!-- header for chart -->
+<pie-chart   data="data3" options="options3"  ></pie-chart>     <!-- my chart -->
+</div>
+
+<div class="floating-box">
+    <center><h2 style="color:#E3B430">Fuel Intake</h2></center>  <!-- header for chart -->
+<pie-chart   data="data4" options="options5"  ></pie-chart>     <!-- my chart -->
+</div>
+
+<div class="floating-box">
+    <center><h2 style="color:#E3B430">Air Intake</h2></center>  <!-- header for chart -->
+<pie-chart   data="data5" options="options5"  ></pie-chart>     <!-- my chart -->
+</div>
+
+<div class="floating-box">
+    <center><h2 style="color:#E3B430">Fuel con</h2></center>  <!-- header for chart -->
+<pie-chart   data="data6" options="options6"  ></pie-chart>     <!-- my chart -->
+</div>
+
+    
+    </div>
+  </center>
+  </ion-content>

@@ -1,0 +1,27 @@
+<ion-view view-title="Sensors">  <!-- browse -->
+  <ion-content>
+      <!-- <h1>Browses</h1> -->
+      <ion-refresher pulling-text="Pull to refresh" on-refresh="doRefresh()"></ion-refresher>  <!-- this will refresh the page and load the data -->
+    
+<!--
+    <center><h2 style="color:#d62728">SPEED</h2></center>
+     
+        <pie-chart data="data" options="options"></pie-chart>
+    
+        <pie-chart data="data2" options="options2"></pie-chart>  -->
+
+        <div class="pad-box"> 
+            <div class="floating-box">
+                <center><h2 style="color:#d62728">Speed</h2></center>  <!-- header for chart -->
+            <pie-chart   data="data" options="options"  ></pie-chart>     <!-- my chart -->
+            </div>
+        </div>
+        <div class="pad-box"> 
+                <div class="floating-box">
+                    <center><h2 style="color:#d62728">Speed</h2></center>  <!-- header for chart -->
+                <pie-chart   data="data7" options="options"  ></pie-chart>     <!-- my chart -->
+                </div>
+            </div>
+
+  </ion-content>
+</ion-view>

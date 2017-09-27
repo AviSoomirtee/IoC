@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+<script src="/js/ng-cordova.js"></script>  <!-- www/js/ng-cordova.js -->
+    <script src="cordova.js"></script>
+
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDgMkMHhufIPXvn5AlswQoioRrp5RtB2kk",
+        authDomain: "piioc-780c4.firebaseapp.com",
+        databaseURL: "https://piioc-780c4.firebaseio.com",
+        projectId: "piioc-780c4",
+        storageBucket: "piioc-780c4.appspot.com",
+        messagingSenderId: "159586865733"
+      };
+      firebase.initializeApp(config);
+    </script>
+    
+
+    <!-- your app's js -->
+    <script src="js/d3.js"></script>                     <!-- pie chart libs -->
+    <script src="js/pie-chart.min.js"> </script>  
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyDlRiD86cqeiqvYG1rKgTTPdcTND5alvrI"></script> 
+
+  </head>
+
+  <body ng-app="starter">
+    <ion-nav-view></ion-nav-view>
+  </body>
+</html>
